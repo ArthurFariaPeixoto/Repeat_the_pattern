@@ -1,0 +1,75 @@
+:root{
+    --background_color: rgb(50,50,50);
+    --background_color_blue: rgb(0, 54, 180);
+    --background_color_red: rgb(180, 2, 12);
+    --background_color_green: rgb(10, 180, 16);
+    --background_color_yellow: rgb(170, 185, 7);
+}
+
+body{
+    margin: 0;
+    background-color: var(--background_color);
+    color: white;
+    font-family: sans-serif;
+}
+
+h1{
+    width:100%;
+    position:absolute;
+    text-align:left;
+    padding-left: 20%;
+}
+
+.tela_doJogo{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.RPT{
+    display: grid;
+    grid-template-areas: 'azul vermelho' 'amarelo verde';
+    grid-gap: 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 100%;
+    width: 700px;
+    height: 700px;
+}
+
+.blue{
+    grid-area: azul;
+    background-color: var(--background_color_blue);
+    border-top-left-radius: 100%;
+    opacity: 1;
+}
+
+.red{
+    grid-area: vermelho;
+    background-color: var(--background_color_red);
+    border-top-right-radius: 100%;
+    opacity: 1;
+}
+
+.green{
+    grid-area: verde;
+    background-color: var(--background_color_green);
+    border-bottom-right-radius: 100%;
+    opacity: 1;
+}
+
+.yellow{
+    grid-area: amarelo;
+    background-color: var(--background_color_yellow);
+    border-bottom-left-radius: 100%;
+    opacity: 1;
+}
+
+.selected{
+    opacity: 0.8;
+}
+
+
+
